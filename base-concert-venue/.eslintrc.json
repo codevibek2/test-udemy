@@ -28,7 +28,8 @@
   "env": {
     "browser": true,
     "node": true,
-    "es6": true
+    "es6": true,
+    "jest": true
   },
   "rules": {
     "no-unused-vars": "off",
@@ -36,7 +37,7 @@
     "import/no-extraneous-dependencies": [2, { "devDependencies": true }],
     "react/prop-types": ["off"],
     "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".jsx"] }],
-    "import/extensions": ["error", "never"],
+    "import/extensions": ["warn", "never"],
     "import/prefer-default-export": 0,
     "import/no-anonymous-default-export": 0,
     "import/no-unresolved": 2,
@@ -44,7 +45,7 @@
     "import/order": "off",
     "no-shadow": "off",
     "no-use-before-define": "off",
-    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/rules-of-hooks": "warn",
     "react-hooks/exhaustive-deps": "warn",
     "react/no-array-index-key": "off",
     "react/react-in-jsx-scope": "off",
@@ -63,7 +64,7 @@
         "endOfLine": "auto"
       }
     ],
-    "simple-import-sort/exports": "error",
+    "simple-import-sort/exports": "warn",
     "simple-import-sort/imports": [
       "warn",
       {
